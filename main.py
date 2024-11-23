@@ -58,3 +58,5 @@ final_prediction = tf.argmax(predictions[-1], -1)
 non_streaming_output, _ = model({**init_states, 'image': example_input})
 non_streaming_prediction = tf.argmax(non_streaming_output, -1)
 
+print(final_prediction)
+print(non_streaming_prediction)
